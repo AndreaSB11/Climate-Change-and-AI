@@ -59,6 +59,7 @@ test  <- (!train )
 #Notas importantes: 
 #1. El modelo que se selecionará con este método no va tener más de 7 variables, esto porque
 #dado la limitante de tiempo, no pudimos correr el código con un límite mayor. 
+max.vars<-7
 
 #Método Best subset
 regfit.best <- regsubsets (model, data.model[train,], nvmax =max.vars,really.big = T)
